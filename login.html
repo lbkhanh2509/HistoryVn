@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="icon" type="image/x-icon" href="../assets/faviconx.ico" />
+    <link rel="stylesheet" type="text/css" href="./login.css" />
+    <script>
+      src = "https://kit.fontawesome.com/64d58efce2.js";
+      crossorigin = "anonymous";
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <!-- Sign-in form -->
+          <form action="" class="sign-in-form">
+            <h2 class="title">Đăng nhập</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Tên đăng nhập" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Mật khẩu" />
+            </div>
+            <input type="submit" value="Đăng nhập" class="login-btn-solid" />
+          </form>
+          <!-- Sign-up form -->
+          <form action="" class="sign-up-form">
+            <h2 class="title">Đăng ký</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Tên đăng nhập" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" placeholder="Email" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Mật khẩu" />
+            </div>
+            <input type="submit" value="Đăng ký" class="sign_up-btn-solid" />
+          </form>
+        </div>
+      </div>
+      <!-- Content -->
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>BẠN CHƯA CÓ TÀI KHOẢN ?</h3>
+            <p>Bạn muốn tìm hiểu thêm về Lịch Sử VN</p>
+            <button class="btn transparent" id="sign-up-btn">ĐĂNG KÝ</button>
+          </div>
+          <img src="./img/log.svg" class="image" alt="" />
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>BẠN ĐÃ CÓ TÀI KHOẢN ?</h3>
+            <p></p>
+            <button class="btn transparent" id="sign-in-btn">Đăng nhập</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="clock.css">
+</head>
+<body onload="initClock()">
+    <div class="datetime">
+        <div class="date">
+            <span id="month">02</span>
+            <span id="daynum">9</span>
+            <span id="year">1945</span>
+        </div>
+    <div class="time">
+        <span id="hour">9</span>:
+        <span id="miniutes">00</span>:
+        <span id="second">00</span>:
+        <span id="period">AM</span>
+    </div>
+    </div>
+    <a class="button" href="./home.html">Tìm hiểu thêm <button onclick=""></button></a>
+    <script type="text/javascript">
+        function updateClock(){
+           var now = new Date();
+               min   = now.getMinutes(),
+               sec   = now.getSeconds(),
+               pe    = "AM";
+              var ids    = ["miniutes","second","period"];
+              var values  =[ min,sec,pe ];
+              for(var i = 0; i < ids.length; i++)
+              document.getElementById(ids[i]).firstChild.nodeValue = values[i];
+            }
+       function initClock(){
+        updateClock();
+        window.setInterval("updateClock()",1);
+       }
+    </script>
+</body>
+</html>

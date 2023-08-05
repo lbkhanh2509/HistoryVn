@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50) ), url(111.jpg);
+}
+.datetime{
+    color: #fff;
+    background: #D31C1C;
+    font-family: 'Segoe UI', sans-serif;
+    width: 360px;
+    padding: 15px 10px;
+    border: 5px solid#023A70;
+    border-radius: 3px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255,255,255,0.1));
+    transition: 0.5s;
+    transition-property: background,box-shadow;
+}
+/*.datetime:hover{
+    background: #023A70 ;
+    box-shadow: 0 0 30px #023A70;
+}*/
+.date{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 3px;
+}
+.time{
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.time span:not(:last-child){
+    position: relative;
+    margin: 0 6px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 3px;
+}
+.time span:last-child{
+    background: #0682F4;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding: 0 5px;
+    border-radius: 3px;
+}
+ .button{
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 45px;
+    padding: 14px 50px;
+    background-color: #fff;
+}
+.button:hover{
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
